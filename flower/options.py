@@ -65,7 +65,8 @@ define("tasks_columns", type=str,
 define("auth_provider", default='flower.views.auth.GoogleAuth2LoginHandler',
        help="auth handler class")
 define("url_prefix", type=str, help="base url prefix")
-
+define("async_inspect", type=bool, default=True,
+       help="perform worker inspections asynchronously")
 # deprecated options
 define("inspect", default=False, help="inspect workers", type=bool)
 
